@@ -27,8 +27,7 @@ print(byte_string.decode('UTF-8'))
 
 # Write a code to return True if cost is greater than 500$
 example_string5 = "It cost me 1000.00$"
-cost = float(example_string5[11:-1])
-if cost > 500:
+if float(example_string5[11:-1]) > 500:
     print('True')
 else:
     print('The cost is not greater than 500$')
