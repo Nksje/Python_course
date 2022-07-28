@@ -2,9 +2,9 @@
 # print(empty_set)
 
 
-courses = ['History', 'Math', 'Literature', 'Physics', 'Programming', 'Math', 'History']
-set1 = {'Math', 'Physics', 'Programming', 'English'}
-set2 = {'English', 'History', 'Math', 'Art'}
+# courses = ['History', 'Math', 'Literature', 'Physics', 'Programming', 'Math', 'History']
+# set1 = {'Math', 'Physics', 'Programming', 'English'}
+# set2 = {'English', 'History', 'Math', 'Art'}
 # courses.add('English')
 # print(courses)
 # print(courses.pop())     # Выкидывает случайные элемент
@@ -14,4 +14,4 @@ set2 = {'English', 'History', 'Math', 'Art'}
 
 # print(set2.difference(set1))      # Находит чем отличается один от другого
 # print(set2.union(set1))           # Объединяет
-print(list(set(courses)))
+# print(list(set(courses)))
