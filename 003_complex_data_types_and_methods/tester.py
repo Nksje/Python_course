@@ -20,11 +20,3 @@ numbers = [1, 5, 6, 8, 3, 4, 2]
 #                 print(num1, num2, num3, num4)
 
 
-for num in range(1, 101):
-    if num % 3 == 0:
-        print(num, 'FIZZ')
-    if num % 5 == 0:
-        print(num, 'BUZZ')
-    if num % 15 == 0:
-        print(num, 'FIZZ BUZZ')
-
