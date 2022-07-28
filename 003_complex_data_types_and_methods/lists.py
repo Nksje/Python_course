@@ -38,3 +38,22 @@ numbers = [1, 5, 6, 8, 3, 4, 2]
 # print(min(courses))
 # print(max(courses))
 # print(sum(numbers))
+
+# print(courses.index('Math'))
+# print('Math' in courses)
+
+# courses_str = ', '.join(courses)
+# print(courses_str)
+# print(courses_str.split(', '))
+# print(list(courses_str))
+
+# a, b, c = [1, 2, 3]
+# print(a, b, c)
+
+# courses2 = courses.copy()         # Делает копию списка
+
+# courses[0] = 'English'
+# courses2[-1] = 'English'
+#
+# print(courses)
+# print(courses2)
