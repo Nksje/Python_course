@@ -32,4 +32,3 @@ if cost > 500:
     print('True')
 else:
     print('The cost is not greater than 500$')
-
