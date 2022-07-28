@@ -25,3 +25,16 @@ numbers = [1, 5, 6, 8, 3, 4, 2]
 # courses.pop(1)      # Удаление по индексу
 # print(courses)
 # print(deleted_item)
+
+# courses.reverse()   # Развернуть список
+# print(courses)
+
+# courses.sort()          # Сортирует в алфавитном порядке
+# print(courses)
+
+# courses.sort(reverse=True)   # Сортирует в обратном порядке
+# print(sorted(courses))       # Не изменяет оригинал
+
+# print(min(courses))
+# print(max(courses))
+# print(sum(numbers))
