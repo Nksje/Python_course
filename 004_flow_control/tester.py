@@ -77,19 +77,38 @@ while True:
                 else:
                     print('Can\'t determine region of birth')
             elif user_choice == '4':
-                if (int(isikukood[0]) * 1 + int(isikukood[1]) * 2 + int(isikukood[2]) * 3 + int(isikukood[3]) * 4 + int(
-                        isikukood[4]) * 5 + int(isikukood[5]) * 6 +
-                    int(isikukood[6]) * 7 + int(isikukood[7]) * 8 + int(isikukood[8]) * 9 + int(
-                            isikukood[9]) * 1) % 11 >= 10:
-                    if (int(isikukood[0]) * 3 + int(isikukood[1]) * 4 + int(isikukood[2]) * 5 + int(
-                            isikukood[3]) * 6 + int(isikukood[4]) * 7 + int(isikukood[5]) * 8 +
-                        int(isikukood[6]) * 9 + int(isikukood[7]) * 1 + int(isikukood[8]) * 2 + int(
-                                isikukood[9]) * 3) % 11 >= 10:
-                        print('Teie kontrollinumber on 0')
+                # if (int(isikukood[0]) * 1 + int(isikukood[1]) * 2 + int(isikukood[2]) * 3 + int(isikukood[3]) * 4 + int(
+                #         isikukood[4]) * 5 + int(isikukood[5]) * 6 +
+                #     int(isikukood[6]) * 7 + int(isikukood[7]) * 8 + int(isikukood[8]) * 9 + int(
+                #             isikukood[9]) * 1) % 11 >= 10:
+                #     if (int(isikukood[0]) * 3 + int(isikukood[1]) * 4 + int(isikukood[2]) * 5 + int(
+                #             isikukood[3]) * 6 + int(isikukood[4]) * 7 + int(isikukood[5]) * 8 +
+                #         int(isikukood[6]) * 9 + int(isikukood[7]) * 1 + int(isikukood[8]) * 2 + int(
+                #                 isikukood[9]) * 3) % 11 >= 10:
+                #         print('Teie kontrollinumber on 0')
+                #     else:
+                #         print('Your ID is valid')
+                # else:
+                #     print('Your Id is valid')
+                chk1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+                chk2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+                result = 0
+                cnt = 0
+                for number in chk1:
+                    result += number * int(isikukood[cnt])
+                    cnt += 1
+                if result % 11 == int(isikukood[-1]):
+                    print('ID is valid')
+                elif result % 11 == 0:
+                    result = 0
+                    cnt = 0
+                    for number in chk2:
+                        result += number * int(isikukood[cnt])
+                        cnt += 1
+                    if result % 11 == int(isikukood[-1]):
+                        print('Code is valid')
                     else:
-                        print('Your ID is valid')
-                else:
-                    print('Your Id is valid')
+                        print('Code is not valid')
             elif user_choice == '5':
                 break
             elif user_choice == '0':
