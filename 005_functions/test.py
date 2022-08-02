@@ -1,5 +1,5 @@
 from math import *
-from collections import Counter
+import statistics
 
 # Task 1
 
@@ -48,8 +48,8 @@ from collections import Counter
 
 
 # Task 6
-# list1 = [1, 2, 4, 6, 4, 6]
-# print(max(list1, key=list1.count))
+# list1 = [1, 2, 3, 4, 7, 9, 9]
+# print(statistics.multimode(list1))
 
 
 # Task 7
