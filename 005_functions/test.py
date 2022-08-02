@@ -48,10 +48,8 @@ from collections import Counter
 
 
 # Task 6
-# list1 = [1, 2, 3, 4, 7, 9, 9]
-# c = Counter(list1)
-# most_common = c.most_common(1)[0][0]
-# print(list(str(most_common)))
+# list1 = [1, 2, 4, 6, 4, 6]
+# print(max(list1, key=list1.count))
 
 
 # Task 7
