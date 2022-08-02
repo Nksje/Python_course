@@ -52,6 +52,8 @@ from collections import Counter
 # c = Counter(list1)
 # most_common = c.most_common(1)[0][0]
 # print(list(str(most_common)))
+
+
 # Task 7
 
 # sec = 1234565
