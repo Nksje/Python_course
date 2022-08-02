@@ -80,11 +80,11 @@ while True:
                 if (int(isikukood[0]) * 1 + int(isikukood[1]) * 2 + int(isikukood[2]) * 3 + int(isikukood[3]) * 4 + int(
                         isikukood[4]) * 5 + int(isikukood[5]) * 6 +
                     int(isikukood[6]) * 7 + int(isikukood[7]) * 8 + int(isikukood[8]) * 9 + int(
-                            isikukood[9]) * 1) / 11 >= 10:
+                            isikukood[9]) * 1) % 11 >= 10:
                     if (int(isikukood[0]) * 3 + int(isikukood[1]) * 4 + int(isikukood[2]) * 5 + int(
                             isikukood[3]) * 6 + int(isikukood[4]) * 7 + int(isikukood[5]) * 8 +
                         int(isikukood[6]) * 9 + int(isikukood[7]) * 1 + int(isikukood[8]) * 2 + int(
-                                isikukood[9]) * 3) / 11 >= 10:
+                                isikukood[9]) * 3) % 11 >= 10:
                         print('Teie kontrollinumber on 0')
                     else:
                         print('Your ID is valid')
