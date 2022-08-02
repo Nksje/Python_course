@@ -17,7 +17,7 @@ from math import *
 
 # a, b, c = float(input('Enter A side: ')), float(input('Enter B side: ')),\
 #           float(input('Enter C side: '))
-# if c == a + b:
+# if (c ** 2) == a ** 2 + b ** 2:
 #     print('Треугольный прямоугольный')
 # else:
 #     print('Треугольник непрямоугольный')
@@ -27,7 +27,8 @@ from math import *
 
 # list1 = list(input('Enter a list: '))
 # list1.reverse()
-# print(list1)
+# for x in list1:
+#     print(x)
 
 # Task 5
 
