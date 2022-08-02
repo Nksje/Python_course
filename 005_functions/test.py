@@ -1,4 +1,5 @@
 from math import *
+
 # Task 1
 
 # name = input('Enter your name: ')
@@ -46,3 +47,16 @@ from math import *
 
 
 # Task 6
+
+
+# Task 7
+
+# sec = 1234565
+#
+# day = sec // 86400
+# sec2 = sec - (day * 86400)
+# hour = sec2 // 3600
+# sec3 = sec2 - (hour * 3600)
+# minutes = sec3 // 60
+# seconds = sec3 - (minutes * 60)
+# print(day, hour, minutes, seconds, sep=":")
