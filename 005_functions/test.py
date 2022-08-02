@@ -1,4 +1,5 @@
 from math import *
+from collections import Counter
 
 # Task 1
 
@@ -47,8 +48,10 @@ from math import *
 
 
 # Task 6
-
-
+# list1 = [1, 2, 3, 4, 7, 9, 9]
+# c = Counter(list1)
+# most_common = c.most_common(1)[0][0]
+# print(list(str(most_common)))
 # Task 7
 
 # sec = 1234565
