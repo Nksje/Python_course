@@ -44,9 +44,52 @@ while True:
                 else:
                     print('Can\'t determine date of birth')
             elif user_choice == '3':
-                pass
+                if '001' <= isikukood[7:10] <= '010':
+                    print('You were born in Kuresaare haigla')
+                elif '011' <= isikukood[7:10] <= '019':
+                    print('You were born in Tartu Ülikooli Naistekliinik')
+                elif '021' <= isikukood[7:10] <= '150':
+                    print('You were born in Ida-Tallinna keskhaigla, Pelgulinna sünnitusmaja')
+                elif '151' <= isikukood[7:10] <= '160':
+                    print('You were born in Keila haigla')
+                elif '161' <= isikukood[7:10] <= '220':
+                    print('You were born in Rapla haigla, Loksa haigla, Hiiumaa haigla')
+                elif '221' <= isikukood[7:10] <= '270':
+                    print('You were born in Ida-Viru keskhaigla')
+                elif '271' <= isikukood[7:10] <= '370':
+                    print('You were born in Maarjamõisa kliinikum')
+                elif '371' <= isikukood[7:10] <= '420':
+                    print('You were born in Narva haigla')
+                elif '421' <= isikukood[7:10] <= '470':
+                    print('You were born in Pärnu haigla')
+                elif '471' <= isikukood[7:10] <= '490':
+                    print('You were born in Haapsalu haigla')
+                elif '491' <= isikukood[7:10] <= '520':
+                    print('You were born in Järvamaa haigla')
+                elif '521' <= isikukood[7:10] <= '570':
+                    print('You were born in Rakvere haigla, Tapa haigla')
+                elif '571' <= isikukood[7:10] <= '600':
+                    print('You were born in Valga haigla')
+                elif '601' <= isikukood[7:10] <= '650':
+                    print('You were born in Viljandi haigla')
+                elif '651' <= isikukood[7:10] <= '700':
+                    print('You were born in Lõuna-Eesti haigla, Põlva haigla')
+                else:
+                    print('Can\'t determine region of birth')
             elif user_choice == '4':
-                pass
+                if (int(isikukood[0]) * 1 + int(isikukood[1]) * 2 + int(isikukood[2]) * 3 + int(isikukood[3]) * 4 + int(
+                        isikukood[4]) * 5 + int(isikukood[5]) * 6 +
+                    int(isikukood[6]) * 7 + int(isikukood[7]) * 8 + int(isikukood[8]) * 9 + int(
+                            isikukood[9]) * 1) / 11 >= 10:
+                    if (int(isikukood[0]) * 3 + int(isikukood[1]) * 4 + int(isikukood[2]) * 5 + int(
+                            isikukood[3]) * 6 + int(isikukood[4]) * 7 + int(isikukood[5]) * 8 +
+                        int(isikukood[6]) * 9 + int(isikukood[7]) * 1 + int(isikukood[8]) * 2 + int(
+                                isikukood[9]) * 3) / 11 >= 10:
+                        print('Teie kontrollinumber on 0')
+                    else:
+                        print('Your ID is valid')
+                else:
+                    print('Your Id is valid')
             elif user_choice == '5':
                 break
             elif user_choice == '0':
