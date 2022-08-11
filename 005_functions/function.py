@@ -132,4 +132,3 @@ def main_menu():
 
 isikukood = ''
 main_menu()
-# sadasdasd
