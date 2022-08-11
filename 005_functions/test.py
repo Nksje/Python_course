@@ -46,10 +46,28 @@ import statistics
 # listA = tuple(listA)
 # print(listA)
 
+# Or like that
+# a = a[:2] + b + a[2:]
+# print(a)
+
 
 # Task 6
-# list1 = [1, 2, 3, 4, 7, 9, 9]
+# list1 = [1, 2, 3, 4, 4, 7, 9, 9]
 # print(statistics.multimode(list1))
+
+# Без библиотеки
+# test_list = [1, 2, 3, 4, 4, 7, 9, 9]
+# max_count = 0
+# results = []
+# for num in test_list:
+#     if test_list.count(num) > max_count:
+#         max_count = test_list.count(num)
+#
+# for num in test_list:
+#     if test_list.count(num) == max_count and num not in results:
+#         results.append(num)
+#
+# print(results)
 
 
 # Task 7
