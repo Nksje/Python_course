@@ -41,6 +41,11 @@
     # data = file.read()
     # print(data)
 
-with open('text_files/lorem_tester.txt', 'x', encoding='utf8') as file:
-    file.write('Hello world!')
+# with open('text_files/lorem_tester.txt', 'x', encoding='utf8') as file:
+#     file.write('Hello world!')
 
+with open('text_files/lorem.txt', 'r+', encoding='utf8') as file:
+    data = file.read()
+    file.seek(0)
+    file.write('Hello world!\n')
+    file.write(data)
