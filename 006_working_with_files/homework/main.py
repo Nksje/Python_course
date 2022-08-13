@@ -7,4 +7,3 @@ with open('trimushketera.txt', 'r', encoding='utf8') as file:
         unique_words.sort()
         for words in unique_words:
             result.write(words + '\n')
-
