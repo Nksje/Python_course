@@ -11,7 +11,7 @@
 # print(file.closed)
 
 
-# with open('text_files/python.jpg', 'rb') as file:
+with open('text_files/lorem.txt', 'r') as file:
     # data = file.readline()
     # print(data)
     # data2 = file.readline()
@@ -28,9 +28,9 @@
     # print(data)
     # print(file.readline())
 
-    # data = file.readlines(100)
-    # print(len(data))
-    # print(len(data[0]))
+    data = file.readlines(100)
+    print(data)
+    print(len(data[0]))
 
     # chunk_to_read = 4096
     # data = file.read(chunk_to_read)
@@ -44,8 +44,19 @@
 # with open('text_files/lorem_tester.txt', 'x', encoding='utf8') as file:
 #     file.write('Hello world!')
 
-with open('text_files/lorem.txt', 'r+', encoding='utf8') as file:
-    data = file.read()
-    file.seek(0)
-    file.write('Hello world!\n')
-    file.write(data)
+# with open('text_files/lorem.txt', 'r+', encoding='utf8') as file:
+#     data = file.read()
+#     file.seek(0)
+#     file.write('Hello world!\n')
+#     file.write(data)
+
+
+# with open('text_files/python.jpg', 'rb') as file:
+#     with open('text_files/python_copy.jpg', 'wb') as wfile:
+#         chunk_to_read = 4096
+#         data = file.read(chunk_to_read)
+#         cnt = 0
+#         while cnt < 6:
+#             wfile.write(data)
+#             data = file.read(chunk_to_read)
+#             cnt += 1
