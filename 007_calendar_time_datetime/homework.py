@@ -38,10 +38,8 @@ sample4 = '01.01.1970 - 00:00:01'
 # input: timestamp (float)
 # output: timestamp (float)
 
-def timestamp1():
-    timestamp = int(input('Enter the timestamp to covert: '))
-    two_weeks = 14 * 86400
-    print(timestamp - two_weeks)
+def substract_two_weeks(timestamp):
+    return (datetime.fromtimestamp(timestamp) - dt.timedelta(weeks=2)).timestamp()
 
 
-timestamp1()
+print(substract_two_weeks(1014163200))
