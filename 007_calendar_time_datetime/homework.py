@@ -38,6 +38,10 @@ sample4 = '01.01.1970 - 00:00:01'
 # input: timestamp (float)
 # output: timestamp (float)
 
-# timestamp1 = int(input('Enter the timestamp to covert: '))
-# two_weeks = 14 * 86400
-# print(timestamp1 - two_weeks)
+def timestamp1():
+    timestamp = int(input('Enter the timestamp to covert: '))
+    two_weeks = 14 * 86400
+    print(timestamp - two_weeks)
+
+
+timestamp1()
