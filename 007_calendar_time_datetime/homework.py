@@ -38,9 +38,9 @@ sample4 = '01.01.1970 - 00:00:01'
 # input: timestamp (float)
 # output: timestamp (float)
 
-def substract_two_weeks(timestamp):
-    return (datetime.fromtimestamp(timestamp) - dt.timedelta(weeks=2)).timestamp()
+# def substract_two_weeks(timestamp):
+#     return (datetime.fromtimestamp(timestamp) - dt.timedelta(weeks=2)).timestamp()
 
 
-print(substract_two_weeks(1014163200))
+# print(substract_two_weeks(1014163200))
 
