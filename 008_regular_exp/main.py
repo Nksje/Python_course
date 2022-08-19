@@ -7,7 +7,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 1234567890
 Ha HaHa
 MetaCharacters (Need to be escaped):
-. ^ $ * + ? { } [ ] \ | ( )
+. ^ $ * + ? { } [ ]  \  | ( )
 example.com
 321-555-4321
 123.555.1234
@@ -24,9 +24,34 @@ abc
 
 sentence = 'Start a sentence and then bring it to an end'
 
-pattern = re.compile(r'abc')
+emails = '''
+CoreyMSchafer@gmail.com
+corey.schafer@univercity.edu
+corey-321-schafer@my-work.net
+'''
 
-matches = pattern.finditer(text_to_search)
+urls = '''
+https://www.google.com
+http://coreyms.com
+https://youtube.com
+https://www.nasa.gov
+'''
 
-for value in matches:
-    print(value)
+pattern = re.compile(r'start', re.I)
+
+matches = pattern.search(sentence)
+
+
+# matches = pattern.finditer(urls)
+
+# subbed_urls = pattern.sub(r'\2\3', urls)
+
+# print(subbed_urls)
+
+
+# for match in matches:
+#     print(match)
+
+print(matches)
+
+
