@@ -1,3 +1,4 @@
+from operator import le
 import re
 
 # color = "AliceBlue #F0F8FF, " \
@@ -28,11 +29,36 @@ import re
 # for match in matches:
 #     print(match)
 
-isikukood = 'My ID is 50102173728, 6023321022, 60103023737'
+with open('people.txt', 'r', encoding='UTF-8') as file:
+    data = file.read()
 
-pattern = re.compile(r'[3456][0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])\d{4}')
-matches = pattern.finditer(isikukood)
+    name_pattern = re.compile(r'[A-Z][a-z]+ [A-Z][a-z]+')
+    address_pattern = re.compile(r'\d{3} [A-Z0-9][a-z]+ St\., [A-Z][A-Za-z-\' ]+ [A-Z]{2} \d+')
 
-for match in matches:
-    print(match)
+    name_matches = name_pattern.finditer(data)
+    addresses_matches = address_pattern.finditer(data)
 
+    
+    names = []
+    addresses = []
+
+    for name in name_matches:
+        if name.group()[-2:] != 'St' and name.group() != 'Vice City' and name.group() != 'South Park':
+            names.append(name.group())
+
+    
+    for address in addresses_matches:
+        addresses.append(address.group())
+        # print(address.group())
+    
+    print(len(names))
+    print(len(addresses))
+
+
+# isikukood = 'My ID is 50102173728, 6023321022, 60103023737'
+
+# pattern = re.compile(r'[3456][0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])\d{4}')
+# matches = pattern.finditer(isikukood)
+
+# for match in matches:
+#     print(match)
