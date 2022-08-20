@@ -28,5 +28,11 @@ import re
 # for match in matches:
 #     print(match)
 
+isikukood = 'My ID is 50102173728, 6023321022, 60103023737'
 
+pattern = re.compile(r'[3456][0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])\d{4}')
+matches = pattern.finditer(isikukood)
+
+for match in matches:
+    print(match)
 

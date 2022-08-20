@@ -41,7 +41,6 @@ pattern = re.compile(r'start', re.I)
 
 matches = pattern.search(sentence)
 
-
 # matches = pattern.finditer(urls)
 
 # subbed_urls = pattern.sub(r'\2\3', urls)
@@ -53,5 +52,4 @@ matches = pattern.search(sentence)
 #     print(match)
 
 print(matches)
-
 
