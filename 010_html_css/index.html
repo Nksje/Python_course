@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- TEXT TAGS -->
+	<h1>TEXT TAGS</h1>
+	<h2>Hello world</h2>
+	<h3>Heading 2</h3>
+	<h6>Heading 6</h6>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eum, debitis excepturi eligendi provident dolore aut inventore sit quod. Beatae laboriosam obcaecati rerum nostrum, incidunt assumenda blanditiis itaque animi magnam, rem deleniti sint voluptatem repellat. Consequuntur voluptatum ipsum eius nihil, doloremque, ratione debitis optio maiores nesciunt nostrum tenetur, laudantium neque eligendi tempore ad perspiciatis. Nemo exercitationem autem commodi accusantium tempora impedit eligendi id in officia totam corporis magni, explicabo perferendis optio ad ea! Odit obcaecati deserunt veritatis repellat quam laborum necessitatibus amet? Eos accusamus, at a quas officia in libero, beatae expedita, doloribus provident incidunt amet laboriosam placeat. Consequuntur, odit.</p>
+	<p>Lorem, ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Error dicta sapiente molestias odit hic quas? Consequuntur asperiores rem nihil facilis corrupti quibusdam voluptates doloremque vel tempore. Id debitis quod similique ipsam, ex possimus tempora ipsum hic, excepturi praesentium unde inventore magni? Enim culpa iure, non ducimus et excepturi a, quia, error ea repudiandae quisquam voluptatum libero delectus. Fuga, ad omnis. Fugit enim repellendus sint. Iste ipsam consequatur reiciendis eveniet labore? Possimus eius atque eligendi labore quod sed, facilis culpa reprehenderit nesciunt minima facere officia illo maxime tempore laborum perferendis, dignissimos omnis dolorum. Iure sequi illo vitae fuga voluptatibus nihil quia?</p>
+	<span>Hello world</span>
+	<p>x<sup>2</sup></p>
+	<p>H<sub>2</sub>0</p>
+	<!-- LIST ITEMS -->
+	<h1>LIST ITEMS</h1>
+	<nav>
+		<ul>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+			<li>
+				<ul>
+					<li>One</li>
+					<li>Two</li>
+					<li>Three</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<ol>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ol>
+	<!-- CONTAINERS -->
+	<h1>CONTAINERS</h1>
+	<div>Hello world</div>
+	<header>I am header</header>
+	<footer>I am footer</footer>
+	<section>I am section</section>
+	<p>Lorem <br> ipsum dolor sit amet consectetur adipisicing elit. <hr> Perferendis, sequi iste! Incidunt et, culpa sint assumenda distinctio consequuntur nobis eius numquam dolores nisi nam laudantium deserunt corrupti in eveniet architecto.</p>
+	<!-- IMAGES -->
+	<h1>IMAGES</h1>
+	<img src="http://picsum.photos/800/600" alt="Random"><br>
+	<img src="http://picsum.photos/800/600" alt="Random"><br>
+	<!-- HYPERLINKS -->
+	<h1>HYPERLINKS</h1>
+	<a href="http://google.com">Google</a>
+	<h1><a href="http://google.com"><img src="http://picsum.photos/800/600" alt="random"></a></h1><br>
+	<a href="about.html">About me</a>
+	<!-- TABLES -->
+	<h1>Tables</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>One</td>
+			<td>Two</td>
+			<td>Three</td>
+		</tr>
+		</tbody>
+			<tr>
+				<td>One</td>
+				<td>Two</td>
+				<td>Three</td>
+			</tr>
+		<tfoot>
+			<tr>
+				<td>One</td>
+				<td>Two</td>
+				<td>Three</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	<!-- FORMS -->
+	<h1>Forms</h1>
+	<form action="" method="get">
+		<label for="user-name">User Name: </label>
+		<input type="text" id="user-name" class="input-field" name="user-name"><br>
+		<label for="user-email">User Email: </label>
+		<input type="email" name="user-email" id="user-email" class="input-field"><br>
+		<label for="user-password">Password: </label>
+		<input type="password" id="user-password" class="input-field" name="user-password"><br>
+		<span>User gender: </span>
+		<input type="radio" name="gender" class="input-field" value="Male">Male
+		<input type="radio" name="gender" class="input-field" value="Female">Female <br>
+		<span>Send news?</span>
+		<input type="checkbox" name="newsletter" class="input-field" value="yes"><br>
+		<select name="city" class="input-field">
+			<option value=""></option>
+			<option value="TLN">Tallinn</option>
+			<option value="LDN">London</option>
+			<option value="NY">New-York</option>
+		</select><br>
+		<textarea name="user-message" id="user-message" class="input-field" cols="20" rows="10"></textarea>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Clear">
+	</form>
+</body>
+</html>
