@@ -14,4 +14,3 @@ while cnt < 10:
 
 for i in results:
     print(i)
-
