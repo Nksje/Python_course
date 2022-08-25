@@ -10,6 +10,7 @@ for entry in csv_reader:
 
 results.sort(reverse=True)
 
+
 cnt = 0
 while cnt < 10:
     print(results[cnt][2], results[cnt][0])
