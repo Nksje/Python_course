@@ -12,9 +12,9 @@ agree_button = driver.find_element('xpath', '//*[@id="yDmH0d"]/c-wiz/div/div/div
                                             '2]/div/div/button')
 agree_button.click()
 
-videos = driver.find_elements('class name', 'style-scope ytd-grid-renderer')
-views = driver.find_elements('class name', 'style-scope ytd-grid-renderer')
-posts = driver.find_elements('class name', 'style-scope ytd-grid-renderer')
+videos, views, posts = driver.find_elements('class name', 'style-scope ytd-grid-renderer'),\
+                       driver.find_elements('class name', 'style-scope ytd-grid-renderer'),\
+                       driver.find_elements('class name', 'style-scope ytd-grid-renderer')
 
 video_list = []
 amount_views = []
@@ -38,6 +38,7 @@ for post in posts:
 print(video_list)
 print(amount_views)
 print(posted_time)
+
 time.sleep(3)
 
 driver.quit()
