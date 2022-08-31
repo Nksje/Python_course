@@ -6,6 +6,7 @@ url = 'https://www.saucedemo.com/'
 driver = webdriver.Chrome()
 driver.get(url)
 driver.maximize_window()
+time.sleep(1)
 
 username_finder = driver.find_element('id', 'login_credentials')
 username = username_finder.text.replace('Accepted usernames are:', '').split()
