@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}Home page!{% endblock %} {% block
+content %}
+<form action="#" method="post">
+  <h1>Hello {{ user_name }}</h1>
+  <label>
+    {% if email == '' %} Please enter email: {% else %} Is this your email? {%
+    endif %}
+  </label>
+  <input type="email" name="em" value="{{ email if email }}" />
+  <input type="submit" value="Submit" />
+  <br />
+  {% with messages = get_flashed_messages() %} {% if messages %} {% for msg in
+  messages %}
+  <p style="color: red">{{ msg }}</p>
+  {% endfor %} {% endif %} {% endwith %}
+</form>
+{% endblock %}

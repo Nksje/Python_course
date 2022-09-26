@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block title %}Home page!{% endblock %} {% block
+content %}
+<form action="#" method="post">
+  <label for="nm">Name: </label>
+  <input type="text" name="nm" id="nm" /><br />
+  <label for="password">Password: </label>
+  <input type="password" name="password" id="password" />
+  <input type="submit" value="Submit" />
+</form>
+{% with messages = get_flashed_messages() %} {% if messages %} {% for msg in
+messages %}
+<p style="color: red">{{ msg }}</p>
+{% endfor %} {% endif %} {% endwith %} {% endblock %}
