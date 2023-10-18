@@ -15,8 +15,8 @@ def get_weather_data():
     r = requests.get(url, timeout=10, headers=headers)
     soup = BeautifulSoup(r.content, 'lxml')
     data_rows = soup.tbody.find_all('tr')
-    data_names = ['Air temp average', 'Air temp max', 'Air temp min', 'Ground temp', 'Ground temp 2cm', 'Humidity average', 
-                  'Humidity minimal', 'Air speed average', 'Air speed maximum', 'Chance of rain', 'Sunshine']                 
+    data_names = ['Air temp average', 'Air temp max', 'Air temp min', 'Ground temp', 'Ground temp 2cm', 'Humidity average',
+                  'Humidity minimal', 'Air speed average', 'Air speed maximum', 'Chance of rain', 'Sunshine']
     result = {}
     for tr in data_rows:
         key = tr.findChild('td').text
@@ -26,7 +26,6 @@ def get_weather_data():
         for entry in full_data:
             data_dict[entry[0]] = entry[1]
         result[key] = data_dict
-        
 
     return result
 
@@ -40,6 +39,7 @@ def write_data_to_file(data):
                 json.dump(data2, file, indent=2)
         else:
             print('Data is up to date')
+
 
 def main():
     pass
